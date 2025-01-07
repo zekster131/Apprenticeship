@@ -1,0 +1,129 @@
+# Variables
+
+name = 'Zeki'
+age = 18
+message = f"your name is {name}, your age is {age}"
+message1 = "your name is {}, your age is {}".format(name, age)
+
+print(message)
+
+# Text File Output
+
+import sys
+
+#with open("output.txt", "w") as file:
+#  sys.stdout = file
+#  print("go to the file instead")
+
+
+# Escape Characters
+
+# \ take the next symbol as its literal meaning
+# \n new line, \t tab, \u unicode, \U extended unicode
+# \\ backslash adding a slash to string
+
+print("Person1: \tHey how are you?\nPerson2: \tI'm good, thanks for asking! \U0001f604")
+
+# BODMAS
+
+# // 10//3 = 3 - floor division (how many times 3 goes into 10))
+# % 10%3 = 1 - modulus (remainder)
+
+
+# String Methods
+
+print('hello world'.upper())
+print('HELLO WORLD'.lower())
+
+print('Hello World'.count('l',0))
+
+
+# Collections - Storing/Structuring Data
+
+# Lists - ordered/indexed, mutable (can be added to, removed etc), ['a', 2, etc]
+
+# Dictionaries - unordered / not indexed, mutable (can be added to, removed etc), {key: value, 'b':3, etc}
+
+# Tuples - ordered/indexed, immutable (can't be added to, removed etc), x = ('a', 2, etc)
+
+# Sets - unique values, unordered / not indexed, mutable (can be added to, removed etc), {2, 'a', etc}
+
+
+# Sort
+
+my_list = ['kiwi', 'apple', 'pear', 'banana']
+print(my_list)
+
+my_list.sort() # Alphabetical, ascending
+print(my_list)
+
+my_list.sort(key=len) # Length - can be any function
+print(my_list)
+
+
+# Dictionaries
+
+drinks = {'Fizzy': 'Sprite', 'Ale': 'Ruddles', 'Sweet': 'Lemonade'}
+
+print(drinks['Fizzy'])
+
+drinks['Alcohol'] = 'Dissarano'
+print(drinks)
+
+print(drinks.get('Alcohol'))
+
+# Dictonaries Exercise
+
+#Make a dictionary, 3 authors as keys, multiple books per author as values [].
+#Have an input that asks for an author name and print a STRING of the books by the author. (NOT A LIST)
+
+authors_dict = {'J.K. Rowling': ['Harry Potter', 'Fantastic Beasts and where to find them'], 'Leigh Bargudo': ['Six of Crows', 'Shadow and Bone'], 'M.G. Harris': ['The Joshua Files', 'Black Horizon']}
+
+#author_name = input('Enter an author name: ')
+
+#author_books = authors_dict.get(author_name)
+
+#print(', '.join(author_books or ['Author not found']))
+
+# Conditional Statements
+
+#If
+
+is_admin = False
+is_verified = False
+on_holiday = False
+if (is_admin or is_verified) and not on_holiday:
+  print(f"Welcome, {name}")
+else:
+  print("Sorry, you don't have permissions.")
+
+# Elif
+
+temp = 8
+
+if temp >=30:
+  print('Very Hot')
+elif temp >=20:
+  print('Warm')
+elif temp >=10:
+  print('Cool')
+elif temp == 0:
+  print('Its freezing')
+else:
+  print('Its meh')
+
+# Statements Exercise
+
+# User inputs a mark/grade
+# Over 80 print disctinction
+# Over 60 print pass
+# Else fail
+
+marks = int(input('Enter your marks: '))
+
+if marks >=80:
+  print('Distinction')
+elif marks >=60:
+  print('Pass')
+else:
+  print('Fail')
