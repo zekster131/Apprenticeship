@@ -161,15 +161,85 @@ else:
 
 lbs_or_kgs = ''
 
-while lbs_or_kgs not in ('KGS', 'LBS', 'LB', 'KG', 'POUNDS', 'KILOGRAMS'):
-  lbs_or_kgs = input('Do you want to convert to lbs or kgs ? ')
-  lbs_or_kgs = lbs_or_kgs.upper()
+#while lbs_or_kgs not in ('KGS', 'LBS', 'LB', 'KG', 'POUNDS', 'KILOGRAMS'):
+  #lbs_or_kgs = input('Do you want to convert to lbs or kgs ? ')
+  #lbs_or_kgs = lbs_or_kgs.upper()
 
-weight = int(input('Enter a weight: '))
+#weight = int(input('Enter a weight: '))
 
-if lbs_or_kgs in ('LBS', 'LB', 'POUNDS'):
-  weight = weight/2.2
-  print(f'The weight you entered equals {weight} kgs')
-elif lbs_or_kgs in ('KGS', 'KG', 'KILOGRAMS'):
-  weight = weight*2.2
-  print(f'The weight you entered equals {weight} lbs')
+#if lbs_or_kgs in ('LBS', 'LB', 'POUNDS'):
+  #weight = weight/2.2
+  #print(f'The weight you entered equals {weight} kgs')
+#elif lbs_or_kgs in ('KGS', 'KG', 'KILOGRAMS'):
+  #weight = weight*2.2
+  #print(f'The weight you entered equals {weight} lbs')
+
+# Highest Number with tuple
+
+
+num = 10
+num1 = 20
+print((num, num1)[num < num1])
+
+
+# Iteration
+
+j = 0
+
+while j < 6:
+  j += 1
+  if j ==3:
+    continue # does the next iteration
+  print(j)
+
+# For Loops
+
+my_fruit_list = ['apple', 'banana', 'cherry']
+
+#for fruit in my_fruit_list:
+  #print(fruit)
+
+la = 0
+
+while la < len(my_fruit_list):
+  print(my_fruit_list[1])
+  la +=1
+
+for i in range(1,5): # 1-4
+  print(i)
+
+
+# Square and even numbers 
+
+x = 3
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+even_squared_number = [number ** x for number in numbers if number % 2 == 0]
+
+print(even_squared_number)
+
+
+# Exercise
+# Write a loop that takes in 5 names and prints 'name is cool'
+# While loop
+# For loop
+# List comp
+# Optional: one line list comp
+
+names = []
+
+# while len(names) < 5:
+#   name = input('Enter a name: ')
+#   names.append(name)
+#   print(f'{name} is cool')
+
+# for i in range(5):
+#   name = input('Enter a name: ')
+#   names.append(name)
+#   print(f'{name} is cool')
+
+# List Comp
+
+new_names = [print(f'{name} is cool') for name in [input('Enter a name: ') for i in range(5)]]
+
+print(new_names)
