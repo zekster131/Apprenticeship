@@ -1,5 +1,4 @@
 # Variables
-
 name = 'Zeki'
 age = 18
 message = f"your name is {name}, your age is {age}"
@@ -119,11 +118,58 @@ else:
 # Over 60 print pass
 # Else fail
 
-marks = int(input('Enter your marks: '))
+#marks = int(input('Enter your marks: '))
 
-if marks >=80:
-  print('Distinction')
-elif marks >=60:
-  print('Pass')
+#if marks >=80:
+  #print('Distinction')
+#elif marks >=60:
+  #print('Pass')
+#else:
+  #print('Fail')
+
+
+# Multiple Comparators
+
+deposit = 99
+password = "password123"
+ 
+if 0 < deposit < 100 and password == "password123":
+  print("Thank you for your deposit of {deposit}")
 else:
-  print('Fail')
+  print("Failed ")
+
+# In and not in
+
+name = "root123"
+
+if name in ('root', 'admin', 'user'):
+  print("Invalid Username")
+else:
+  print("Accepted.")
+
+if name not in ('root', 'admin', 'user'):
+  print('Accepted.')
+else:
+  print('Invalid Username')
+
+# Exercise
+
+# Weight converter app
+# User to input weight
+# Input for kgs or lbs
+# If statement to check the unit, convert the value and print
+
+lbs_or_kgs = ''
+
+while lbs_or_kgs not in ('KGS', 'LBS', 'LB', 'KG', 'POUNDS', 'KILOGRAMS'):
+  lbs_or_kgs = input('Do you want to convert to lbs or kgs ? ')
+  lbs_or_kgs = lbs_or_kgs.upper()
+
+weight = int(input('Enter a weight: '))
+
+if lbs_or_kgs in ('LBS', 'LB', 'POUNDS'):
+  weight = weight/2.2
+  print(f'The weight you entered equals {weight} kgs')
+elif lbs_or_kgs in ('KGS', 'KG', 'KILOGRAMS'):
+  weight = weight*2.2
+  print(f'The weight you entered equals {weight} lbs')
