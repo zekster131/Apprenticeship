@@ -48,10 +48,3 @@ sixtyIndex = int(0.6 * numberMarks) # Calculates 60% of the total marks and stor
 
 passMark = round(sortedData[sixtyIndex] / 10) * 10 # Grabs the mark that's in the index of the 60% mark and then rounds it to the nearest ten
 print(f"The pass mark to ensure at least 60% of students pass is {passMark}.")
-
-bleh = 'yo'
-print(bleh)
-bleh = 9
-print(bleh)
-bleh = 9.8
-print(bleh)
