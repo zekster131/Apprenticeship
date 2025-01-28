@@ -2,7 +2,7 @@ https://mystery.knightlab.com/
 
 -- NOTE: for all of the "SELECT *" you could narrow it down and get the values like "SELECT interview_transcript", but I like to select all to see everything going on
 
-Statements:
+-- Statements:
 SELECT * from crime_scene_report -- Checking format of the table
   
 SELECT * from crime_scene_report where date = 20180115 and type = "murder" and city = "SQL City" -- Checking conditions for: you vaguely remember that the crime was a ​murder​ that occurred sometime on ​Jan.15, 2018​ and that it took place in ​SQL City​.
@@ -24,10 +24,9 @@ SELECT * from get_fit_now_member where id like "48Z%" and membership_status = "g
   
 SELECT * from person where id in (28819, 67318) -- Finding general information about the suspects
 
-// THIS IS A SKIP I ACCIDENTALLY FOUND //
+/* THIS IS A SKIP I ACCIDENTALLY FOUND */
 SELECT * from interview where person_id in (28819, 67318)
 SELECT * from person where id = 67318
-//
 
 -- Assuming we completely trust the witnesses (especially witness 1) --
 SELECT * from drivers_license where id in (173289, 423327) and plate_number like "%H42W%" -- Finding, out of the two suspects, which one has a license plate with 'H42W' in
