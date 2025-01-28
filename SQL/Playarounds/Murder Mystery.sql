@@ -1,4 +1,4 @@
-https://mystery.knightlab.com/
+-- https://mystery.knightlab.com/
 
 -- NOTE: for all of the "SELECT *" you could narrow it down and get the values like "SELECT interview_transcript", but I like to select all to see everything going on
 
