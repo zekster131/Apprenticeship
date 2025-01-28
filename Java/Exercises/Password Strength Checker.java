@@ -1,17 +1,3 @@
-# class Students:
-#   def __init__(self, first, last, age):
-#     self.first = first
-#     self.last = last
-#     self.age = age
-#     self.full = first + ' ' + last
-
-# student1 = Students('John', 'Doe', 20)
-# student2 = Students('Jane', 'Doe', 21)
-
-# print(student1.age)
-# print(student2.first)
-# print(student2.full)
-
 # Make a class
 
 # Logic that checks a pasword and returns a rating (very weak, weak, medium, strong, very strong) - check against common passwords and if it matches it should be weak
