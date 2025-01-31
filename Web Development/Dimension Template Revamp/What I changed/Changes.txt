@@ -1,0 +1,10 @@
+Changes:
+
+- Background image to a high quality bee picture
+- Title and H1 to 'Buzzinga | Home', 'Buzzinga' for the bee theme
+- Icon to a bee and increased its size via CSS
+- Copyright at the bottom from 'Untitled design' to 'Buzzinga via HTML5 UP' with the link
+- Added placeholders to the contact form - eg 'Your name' for the Name input
+- On the contact form, the Github icon now links to my repository
+- Added a script which, upon submitting the form, has a popup message saying thank you to the user
+- Changed the font 'Gloria Hallelujah, cursive'
