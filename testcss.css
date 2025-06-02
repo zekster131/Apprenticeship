@@ -18,6 +18,12 @@ NOTES and next TO DO:
 
 - font weight = boldness */
 
+/* ADDED 02/06 */
+
+a.adminConsoleLink, a#logoutLink {
+	color:#000!important
+}
+
 /* ADDED AS OF 14/05 */
 
 a {
@@ -222,7 +228,8 @@ a:hover {
 a:visited {color: var(--color-link);
 }
 
-.navbar a:visited {color: white!important;
+.navbar a:visited {
+    color: #FFF;
 }
 
 a:hover, button:hover, input[type="submit"]:hover, input[type="submit"]:focus {
@@ -1004,7 +1011,7 @@ ______________________________________ */
 */
 
 .navbar-nav>li>a {
-	color: #FFF !important;
+	color: #000 !important;
 }
 
 .navbar-right {
