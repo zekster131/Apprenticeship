@@ -20,6 +20,10 @@ NOTES and next TO DO:
 
 /* ADDED 02/06 */
 
+a.navbar-brand:hover {
+    box-shadow: 0 0 0 0px var(--color-black);
+}
+
 a.adminConsoleLink, a#logoutLink {
 	color:#000!important
 }
