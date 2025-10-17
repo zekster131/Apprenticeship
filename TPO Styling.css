@@ -15,6 +15,9 @@ tbody {
   padding: 0;
 }
 
+.body-border {
+  min-height: 0px
+}
 
 .container {
   max-width: 100%; /* or whatever width suits your layout */
@@ -87,6 +90,10 @@ button:focus-visible {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   box-shadow: 0 4px #000;
+}
+
+.btn-primary-btn-lg:visited {
+  color:#FFF;
 }
 
 .map-button {
