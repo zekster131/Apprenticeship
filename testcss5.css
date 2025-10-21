@@ -18,6 +18,12 @@ NOTES and next TO DO:
 
 - font weight = boldness */
 
+/* ADDED 21/10 */
+
+#verifying_blurb:empty {
+  display: none;
+}
+
 /* ADDED 02/06 */
 
 a.navbar-brand:hover {
