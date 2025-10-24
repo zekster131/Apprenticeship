@@ -22,7 +22,13 @@ NOTES and next TO DO:
 
 @media (min-width: 768px) {
     #forgotPassword {
-		width:0
+		width:12%!important;
+	}
+
+@media (max-width: 768px) {
+    #forgotPassword {
+		margin-top:20px;
+		width:0!important
 	}
 	
 /* ADDED 21/10 */
