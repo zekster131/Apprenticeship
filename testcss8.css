@@ -17,19 +17,6 @@ NOTES and next TO DO:
 - Spacing of text and such is not the same as our live
 
 - font weight = boldness */
-
-/* ADDED 24/10 */
-
-@media (min-width: 768px) {
-    #forgotPassword {
-		width:12%!important;
-	}
-
-@media (max-width: 768px) {
-    #forgotPassword {
-		margin-top:20px;
-		width:0!important
-	}
 	
 /* ADDED 21/10 */
 
