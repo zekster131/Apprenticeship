@@ -18,6 +18,13 @@ NOTES and next TO DO:
 
 - font weight = boldness */
 
+/* ADDED 24/10 */
+
+@media (min-width: 768px) {
+    #forgotPassword {
+		width:0
+	}
+	
 /* ADDED 21/10 */
 
 #verifying_blurb:empty {
