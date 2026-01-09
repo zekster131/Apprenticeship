@@ -45,10 +45,13 @@ a {
 }
 
 a:focus {
-  background-color: #fd0;
-  color: #000;
-  box-shadow: 0 0 0 2px #000, 0 0 0 3px #000; /* extra ring for focus */
-  outline: none;
+	text-decoration: none;
+    color: var(--color-black)!important;
+    outline: 3px solid transparent;
+    background-color: var(--color-focus);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    box-shadow: 0 4px var(--color-black);
 }
 
 a.btn.btn-lg.btn-primary.top.active {
